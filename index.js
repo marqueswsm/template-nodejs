@@ -9,6 +9,7 @@ const taskController = new TaskController({ taskService });
 
 app.post('/task',
   (req, res, next) => taskController.create(req, res, next));
+
 app.get('/task',
   (req, res, next) => taskController.found(req, res, next),
 );
